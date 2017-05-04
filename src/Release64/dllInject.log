@@ -1,0 +1,41 @@
+﻿  AllocWriteDLL.cpp
+AllocWriteDLL.cpp(45): warning C4477: 'printf' : format string '%08x' requires an argument of type 'unsigned int', but variadic argument 1 has type 'LPVOID'
+AllocWriteDLL.cpp(45): warning C4313: 'printf': '%x' in format string conflicts with argument 1 of type 'LPVOID'
+AllocWriteDLL.cpp(76): warning C4477: 'printf' : format string '%08x' requires an argument of type 'unsigned int', but variadic argument 1 has type 'LPVOID'
+AllocWriteDLL.cpp(76): warning C4313: 'printf': '%x' in format string conflicts with argument 1 of type 'LPVOID'
+AllocWriteDLL.cpp(90): warning C4477: 'printf' : format string '%08x' requires an argument of type 'unsigned int', but variadic argument 1 has type 'LPVOID'
+AllocWriteDLL.cpp(90): warning C4313: 'printf': '%x' in format string conflicts with argument 1 of type 'LPVOID'
+  dllinject.cpp
+dllinject.cpp(79): warning C4996: 'GetVersionExA': was declared deprecated
+  C:\Program Files (x86)\Windows Kits\8.1\Include\um\sysinfoapi.h(433): note: see declaration of 'GetVersionExA'
+  ExecThread.cpp
+  LoadLibraryR.cpp
+LoadLibraryR.cpp(160): warning C4312: 'type cast': conversion from 'DWORD' to 'DLLMAIN' of greater size
+  Running Code Analysis for C/C++...
+  Generating code
+  All 17 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  dllInject.vcxproj -> C:\Users\edlafem1\Documents\GitHubVisualStudio\dllinjector\Release64\dllInjector.exe
+  dllInject.vcxproj -> C:\Users\edlafem1\Documents\GitHubVisualStudio\dllinjector\Release64\dllInjector.pdb (Full PDB)
+c:\users\edlafem1\documents\githubvisualstudio\dllinjector\src\allocwritedll.cpp(45): warning C6273: Non-integer passed as _Param_(2) when an integer is required in call to 'printf' Actual type: 'void *':  if a pointer value is being passed, %p should be used.
+c:\users\edlafem1\documents\githubvisualstudio\dllinjector\src\allocwritedll.cpp(47): warning C6387: 'lpDllAddr' could be '0':  this does not adhere to the specification for the function 'WriteProcessMemory'. 
+c:\users\edlafem1\documents\githubvisualstudio\dllinjector\src\allocwritedll.cpp(76): warning C6273: Non-integer passed as _Param_(2) when an integer is required in call to 'printf' Actual type: 'void *':  if a pointer value is being passed, %p should be used.
+c:\users\edlafem1\documents\githubvisualstudio\dllinjector\src\allocwritedll.cpp(90): warning C6273: Non-integer passed as _Param_(2) when an integer is required in call to 'printf' Actual type: 'void *':  if a pointer value is being passed, %p should be used.
+c:\users\edlafem1\documents\githubvisualstudio\dllinjector\src\allocwritedll.cpp(77): warning C6387: 'lpDllAddr' could be '0':  this does not adhere to the specification for the function 'WriteProcessMemory'. 
+c:\users\edlafem1\documents\githubvisualstudio\dllinjector\src\allocwritedll.cpp(85): warning C6387: 'Temp_value_#698' could be '0':  this does not adhere to the specification for the function 'GetProcAddress'. 
+c:\users\edlafem1\documents\githubvisualstudio\dllinjector\src\dllinject.cpp(90): warning C6340: Mismatch on sign: 'unsigned long' passed as _Param_(2) when some signed type is required in call to 'printf'.
+c:\users\edlafem1\documents\githubvisualstudio\dllinjector\src\dllinject.cpp(79): warning C28159: Consider using 'IsWindows*' instead of 'GetVersionExA'. Reason: Deprecated. Use VerifyVersionInfo* or IsWindows* macros from VersionHelpers.
+c:\users\edlafem1\documents\githubvisualstudio\dllinjector\src\dllinject.cpp(106): warning C6340: Mismatch on sign: 'unsigned long' passed as _Param_(2) when some signed type is required in call to 'printf'.
+c:\users\edlafem1\documents\githubvisualstudio\dllinjector\src\dllinject.cpp(109): warning C6340: Mismatch on sign: 'unsigned long' passed as _Param_(2) when some signed type is required in call to 'printf'.
+c:\users\edlafem1\documents\githubvisualstudio\dllinjector\src\dllinject.cpp(116): warning C6340: Mismatch on sign: 'unsigned long' passed as _Param_(2) when some signed type is required in call to 'printf'.
+c:\users\edlafem1\documents\githubvisualstudio\dllinjector\src\dllinject.cpp(119): warning C6340: Mismatch on sign: 'unsigned long' passed as _Param_(2) when some signed type is required in call to 'printf'.
+c:\users\edlafem1\documents\githubvisualstudio\dllinjector\src\dllinject.cpp(136): warning C6340: Mismatch on sign: 'unsigned long' passed as _Param_(2) when some signed type is required in call to 'printf'.
+c:\users\edlafem1\documents\githubvisualstudio\dllinjector\src\dllinject.cpp(139): warning C6340: Mismatch on sign: 'unsigned long' passed as _Param_(2) when some signed type is required in call to 'printf'.
+c:\users\edlafem1\documents\githubvisualstudio\dllinjector\src\dllinject.cpp(165): warning C6340: Mismatch on sign: 'unsigned long' passed as _Param_(2) when some signed type is required in call to 'printf'.
+c:\users\edlafem1\documents\githubvisualstudio\dllinjector\src\dllinject.cpp(228): warning C6340: Mismatch on sign: 'unsigned long' passed as _Param_(2) when some signed type is required in call to 'printf'.
+c:\users\edlafem1\documents\githubvisualstudio\dllinjector\src\execthread.cpp(199): warning C6340: Mismatch on sign: 'unsigned long' passed as _Param_(2) when some signed type is required in call to 'printf'.
+c:\users\edlafem1\documents\githubvisualstudio\dllinjector\src\execthread.cpp(169): warning C6387: 'Temp_value_#625' could be '0':  this does not adhere to the specification for the function 'GetProcAddress'. 
+c:\users\edlafem1\documents\githubvisualstudio\dllinjector\src\execthread.cpp(244): warning C6340: Mismatch on sign: 'unsigned long' passed as _Param_(2) when some signed type is required in call to 'printf'.
+c:\users\edlafem1\documents\githubvisualstudio\dllinjector\src\execthread.cpp(225): warning C6387: 'Temp_value_#651' could be '0':  this does not adhere to the specification for the function 'GetProcAddress'. 
+c:\users\edlafem1\documents\githubvisualstudio\dllinjector\src\loadlibraryr.cpp(172): warning C6320: Exception-filter expression is the constant EXCEPTION_EXECUTE_HANDLER. This might mask exceptions that were not intended to be handled.
+c:\users\edlafem1\documents\githubvisualstudio\dllinjector\src\loadlibraryr.cpp(227): warning C6320: Exception-filter expression is the constant EXCEPTION_EXECUTE_HANDLER. This might mask exceptions that were not intended to be handled.

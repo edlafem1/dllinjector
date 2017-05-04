@@ -41,12 +41,12 @@
     <ClInclude Include="ReflectiveDLLInjection.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h">
+    <ClInclude Include="resource.h.txt">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="dllInjector.rc">
+    <ResourceCompile Include="dllInjector.rc.txt">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>

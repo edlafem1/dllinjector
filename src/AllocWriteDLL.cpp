@@ -50,6 +50,14 @@ LPTHREAD_START_ROUTINE AllocWriteDLL(HANDLE hTargetProcHandle, LPCSTR dllPath) {
 	}
 
 	dwReflectiveLoaderOffset = GetReflectiveLoaderOffset(lpWriteBuff);
+    //dwReflectiveLoaderOffset = 0x1020; // for hello-world1.dll
+
+    /*
+    Since we have the dll, we can analyze it and find the address of whatever function in it that we want to call.
+    Simply open in FileAlyzer, go to PE Exports, then go to Address. Not Physical!
+    In PEview: .rdata > EXPORT Address Table, get 'Data' field for function
+    We can then set dwReflectiveLoaderOffset = (DWORD) 0x<address>;
+    */
 	
 	HeapFree( GetProcessHeap(), 0, lpWriteBuff );
 	
